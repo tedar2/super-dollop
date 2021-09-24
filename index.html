@@ -1,36 +1,41 @@
 <!DOCTYPE html>
 <html>
-  <head>
-  </head>
-  <body>
-    <div class="grid-container">
+<head>
+<style>
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  background-color: #2196F3;
+  padding: 10px;
+}
+.grid-item {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+}
+</style>
+</head>
+<body>
+
+<h1>Grid Elements</h1>
+
+<p>A Grid Layout must have a parent element with the <em>display</em> property set to <em>grid</em> or <em>inline-grid</em>.</p>
+
+<p>Direct child element(s) of the grid container automatically becomes grid items.</p>
+
+<div class="grid-container">
   <div class="grid-item">1</div>
   <div class="grid-item">2</div>
-  <div class="grid-item">3</div>
+  <div class="grid-item">3</div>  
   <div class="grid-item">4</div>
-   </div>
-    <h1> Books to check out </h1>
-    <p> Every now and then we come across the books that attract our attention. Below it is possible to find a few examples for the evening reading time.</p>
-    <link rel="stylesheet" href="style.css">
-    <h1><img src="the-power-of-habit.png" 
-             alt="the power of habit"/></h1>
-    <h6>Excerpt From: Charles Duhigg. “The power of Habit”. Apple Books.</h6>
-    <p> Charles Duhigg demonstrates that it is possible to transform our lives via changing and creating habits.</p>
-   
-    <h1><img src="12-rules-for-life.png" 
-             alt="12 rules for life"/></h1>
-    <h6>Excerpt From: Jordan B Peterson. “12 rules for life”. Apple Books.</h6>
-    
-    <p>"Humorous, surprising, and informative, Dr. Peterson tells us why skateboarding boys and girls must be left alone, what terrible fate awaits those who criticize too easily, and why you should always pet a cat when you meet one on the street."(Goodreads, 2018) </p>
-  
-    <h1><img src="smillas-sense-of-snow.png" 
-             alt="smilla's sense of snow"/> </h1>
-    <h6>Excerpt From: Peter Høeg. “Smilla's sense of snow”. Apple Books.</h6>
-    <p> While Smilla Jaspersen thinks more highly of snow and ice than anything else, she is convinced that there happened a terrible crime in a small town.</p>
-    <h1><img src="bear-town.png" 
-             alt="bear town"/> </h1>
-    <h6>Excerpt From: Fredrik Backman. “Bear Town”. Apple Books.</h6>
-    <p> People say Beartown is finished, but there are few believers with burning hearts who believe that the Beartown hockey team actually have a shot at winning national semi-finals. All the hopes and dreams are laying as a heavy burden on teenage boys.</p>
-   
-  </body>
+  <div class="grid-item">5</div>
+  <div class="grid-item">6</div>  
+  <div class="grid-item">7</div>
+  <div class="grid-item">8</div>
+  <div class="grid-item">9</div>  
+</div>
+
+</body>
 </html>
